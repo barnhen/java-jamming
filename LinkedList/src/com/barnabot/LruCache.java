@@ -24,10 +24,11 @@ public class LruCache {
             Remove(n);
             SetHead(n);
             return n.value;
-
         }
+
         return -1;
     }
+
 
     public void Remove(Node n)
     {
@@ -61,7 +62,7 @@ public class LruCache {
 
         Head = n;
 
-        if(null != End){
+        if(null == End){
             End = Head;
         }
     }
